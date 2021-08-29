@@ -7,17 +7,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Layout</title>
     <style>
-    
-        h1
+        *
         {
-            color:white;
-            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;margin: 0;border-box;
+        }
+        #container
+        {
+            display: inline-flex;
             
         }
-    </style>
+        h1
+        {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 15px;
+
+            
+        }
+        .box
+        {
+            width: 300px;
+            background-color: white;
+            overflow: hidden;
+            border: 2px solid grey;
+            box-shadow: 0px 7px 7px darkgrey;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 17px;
+            text-align: justify;
+        }
+
+        .box img
+        {
+            width: 100%;
+            border-radius: 10px;
+            height: 170px;
+        }
+        .box h3
+        {
+            text-align: center;
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .mybutton
+        {
+            display: block;
+            margin-top: 30px;
+            text-decoration: none;
+            text-align: center;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: red;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            
+        }
+        .mybutton:hover
+        {
+            background-color: blue;
+        }
+    </style>    
     
 </head>
+
 <body style="background-color: lightgrey;">
     <h1 >PRACTICAL-6: CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES.</h1><br>
+    
+    <div id="container">
+
+    <div class="box" >
+        <div class="image">
+            <img src="./assests/html.jpg" alt="" />
+        </div>
+    <h3>Introduction to HTML</h3>
+    <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web
+    browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+    </p>
+    <div class="image-button">
+    <a href="https://yash-1305yg.github.io/Practical--5/html1.html" class="mybutton">Read more</a>
+    </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="./assests/css2.jpeg" alt="" />
+        </div>
+    <h3>Introduction to CSS</h3>
+    <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup
+    language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+    </p>
+    <div class="image-button">
+        <a href="https://yash-1305yg.github.io/Practical--5/css.html" class="mybutton">Read more</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="./assests/js.jpg" alt="" />
+        </div>
+    <h3>Introduction to JavaScript</h3>
+    <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.
+        JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic
+        typing and other features.
+    </p>
+    <div class="image-button">
+        <a href="https://yash-1305yg.github.io/Practical--5/javascript.html" class="mybutton">Read more</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="./assests/bootstrap-1.jpg" alt="" />
+        </div>
+    <h3>Introduction to Bootstrap</h3>
+    <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It
+        contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface
+        components.
+    </p>
+    <div class="image-button">
+        <a href="https://yash-1305yg.github.io/Practical--5/bootstrap.html" class="mybutton">Read more</a>
+        </div>
+    </div>
+
+    </div>
 </body>
 </html>
